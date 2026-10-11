@@ -1,9 +1,4 @@
--- =====================================================================
--- 实验室设备借用管理系统 建表脚本（G2：A 主导、B 会签，字段冻结）
--- MySQL 8.x / InnoDB / utf8mb4
--- 说明：跨域字段 user.status、equipment.status/is_deleted、
---       borrow_record.approval_status/overdue_status 取值含义双方已对齐，
---       请勿擅自修改，需变更时 A、B 共同评审。
+
 -- =====================================================================
 
 CREATE DATABASE IF NOT EXISTS `lab_equipment`
