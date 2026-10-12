@@ -1,14 +1,4 @@
-"""设备模块视图（接口文档 2.1 - 2.6 / 5.3，责任人 A）
 
-接口清单：
-2.1  GET    /api/equipment/list            设备列表（user 过滤 is_deleted，admin 看全部）
-2.2  GET    /api/equipment/{id}             设备详情 + 历史借用记录
-2.3  POST   /api/admin/equipment/add        管理员新增设备
-2.4  PUT    /api/admin/equipment/update/{id} 管理员编辑设备（借出中禁止改 status）
-2.5  DELETE /api/admin/equipment/delete/{id} 逻辑删除设备
-2.6  POST   /api/admin/equipment/import      批量导入设备（第二阶段）
-5.3  GET    /api/admin/export/equipment      导出设备台账 Excel
-"""
 from django.conf import settings
 from django.http import HttpResponse
 from rest_framework.decorators import api_view, permission_classes
