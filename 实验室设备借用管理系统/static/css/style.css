@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+    background: #f5f6fa;
+    color: #2d3436;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.topbar {
+    background: #2c3e50;
+    padding: 0 32px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.topbar .brand {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.topbar .nav {
+    display: flex;
+    gap: 20px;
+}
+
+.topbar .nav a {
+    color: #dfe6e9;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topbar .nav a:hover {
+    color: #74b9ff;
+}
+
+.container {
+    flex: 1;
+    max-width: 1000px;
+    width: 100%;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.hero {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.hero h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #636e72;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.card p {
+    font-size: 14px;
+    color: #636e72;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #b2bec3;
+    font-size: 13px;
+}

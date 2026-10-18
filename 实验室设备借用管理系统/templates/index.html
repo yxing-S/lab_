@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}首页 - 实验室设备借用管理系统{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>欢迎使用实验室设备借用管理系统</h1>
+    <p>设备登记、在线借用、审批归还，一站式管理。</p>
+</section>
+
+<section class="cards">
+    <a class="card" href="{% url 'equipment:index' %}">
+        <h2>设备管理</h2>
+        <p>设备信息登记、分类与库存维护</p>
+    </a>
+    <a class="card" href="{% url 'borrow:index' %}">
+        <h2>借用管理</h2>
+        <p>借用申请、审批流程与归还记录</p>
+    </a>
+    <a class="card" href="{% url 'users:index' %}">
+        <h2>用户中心</h2>
+        <p>用户信息、角色与权限管理</p>
+    </a>
+</section>
+{% endblock %}
