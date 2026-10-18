@@ -1,5 +1,6 @@
-"""全局异常处理器（G4，分工中 B 牵头，A 先行落地以便联调）
 
+
+"""
 所有异常统一输出：{"code": ..., "msg": ..., "data": null}
 """
 import logging
@@ -78,7 +79,6 @@ def custom_exception_handler(exc, context):
 
     # ---- 非 DRF 管辖的异常（兜底 500）----
     logger.exception("服务器内部异常: %s", exc)
-    from rest_framework.response import Response as DRFResponse
     return DRFResponse(
         Result.error(500, "服务器内部异常"),
         status=500,

@@ -1,14 +1,4 @@
-"""借用记录模型（域 2：借用流转，业务责任人 B）
 
-G2 阶段由 A 主导冻结表结构，B 不得擅自修改字段；
-A 仅在 2.2 设备详情中【只读】本表，不写任何状态流转。
-
-开发者 B 接手后在本 app 内实现：
-- 3.1-3.6 借用申请/审批接口
-- 4.1-4.3 归还管理接口
-- 5.1-5.2/5.4 统计导出接口
-- G12 逾期状态更新（定时任务或查询时实时计算）
-"""
 from django.db import models
 
 from apps.common.constants import ApprovalStatus, OverdueStatus

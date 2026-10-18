@@ -1,9 +1,5 @@
 """角色权限校验（G7）
 
-接口文档第 9 节第 1 条：所有接口后端必须鉴权，越权返回 403。
-用法：
-    @permission_classes([IsAdmin])         # 仅 admin
-    @permission_classes([IsAuthenticated]) # admin/user 均可（DRF 内置）
 """
 from rest_framework.permissions import BasePermission, SAFE_METHODS
 
