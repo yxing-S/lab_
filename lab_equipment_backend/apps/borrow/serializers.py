@@ -67,7 +67,7 @@ class BorrowRecordOutSerializer(serializers.ModelSerializer):
     planBorrowStart = serializers.DateTimeField(source="plan_borrow_start", format="%Y-%m-%d %H:%M:%S")
     planReturnTime = serializers.DateTimeField(source="plan_return_time", format="%Y-%m-%d %H:%M:%S")
     borrowPurpose = serializers.CharField(source="borrow_purpose")
-    remark = serializers.CharField(source="remark")
+    remark = serializers.CharField()
     approvalStatus = serializers.CharField(source="approval_status")
     approvalComment = serializers.CharField(source="approval_comment")
     auditorName = serializers.CharField(source="auditor.name", default="")
